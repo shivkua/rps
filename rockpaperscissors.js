@@ -10,7 +10,7 @@ function playerplay() {
     switch(userselection){
         case "ROCK":
             if(cpuSelection == "ROCK"){
-                return "DRAW";
+                return "DRAW"; 
             }
             else if(cpuselection == "PAPER"){
                 return "LOSS";

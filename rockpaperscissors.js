@@ -44,3 +44,9 @@ function playerplay() {
     }
 
 }
+function Game() {
+    for(var i = 0; i < 5; i++){
+        const computerSelection = computerPlay()
+        console.log(playRound(playerSelection, computerSelection)) 
+    }
+}

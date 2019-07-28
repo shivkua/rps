@@ -1,12 +1,12 @@
 function computerPlay(){
-    var cpuchoice = ["ROCK", "PAPER", "SCISSORS"];
-    var choose = Math.floor(Math.random() * 3 + 1);
-    return cpuchoice[choose];
+    let cpuchoice = ["ROCK", "PAPER", "SCISSORS"];
+    console.log(cpuchoice[(Math.floor(Math.random() * 3 + 1))]);
+
 }
 
 function playerplay() {
-    var cpuselection = computerPlay();
-    var userselection = prompt("Enter ROCK, PAPER, or SCISSORS");
+    let cpuselection = computerPlay();
+    let userselection = prompt("Enter ROCK, PAPER, or SCISSORS");
     switch(userselection){
         case "ROCK":
             if(cpuSelection == "ROCK"){
@@ -20,10 +20,10 @@ function playerplay() {
             }
         case "SCISSORS":
             if(cpuSelection == "ROCK"){
-                return "LOSS";
+                return "WIN";
             }
             else if(cpuselection == "PAPER"){
-                return "WIN";
+                return "LOSS";
             }
             else{
                 return "DRAW"
@@ -45,8 +45,8 @@ function playerplay() {
 
 }
 function Game() {
-    for(var i = 0; i < 5; i++){
-        const computerSelection = computerPlay()
-        console.log(playRound(playerSelection, computerSelection)) 
+    //for(var i = 0; i < 5; i++){
+        let computerSelection = computerPlay()
+        console.log(playRound(userselection, computerSelection)) 
     }
-}
+//}
